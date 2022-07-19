@@ -12,8 +12,7 @@ for process in psutil.process_iter():
 for pid in pointer:
     for _ in range(1):
         if pid.memory_percent() < kill_percent or not pid.is_running():
-            print("PID:", pid.pid,"| Memory:", round(pid.memory_percent(),2), "% | kill_percent:", kill_percent, "%" )
-             # no action, spotlight is using less than kill_percent (variable above) of memory or process isn't running
+#            print("PID:", pid.pid,"| Memory:", round(pid.memory_percent(),2), "% | kill_percent:", kill_percent, "%" )
             break
     else:
         pid.kill()
