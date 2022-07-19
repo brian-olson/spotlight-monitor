@@ -3,7 +3,7 @@ A quick script to monitor the Logitech Spotlight's memory leak &amp; restart the
 
 This is a simple python script. You can simply execute the script when needed to do a quick restart of the daemon. I have choosen to use a cron job to periodically check the memory usage and restart when crossing a threashhold (variable in script). The Spotlight reconnects in ~1 second so I haven't found this to be disruptive even in the middle of a presentation. Nothing shows on your extended screen (assuming two displays) but you will see the restart as the process reloads on your main display...still not nearly as disruptive as the pointer making your entire computer unresponsive as it consumes all system memory. 
 
-![permissions](https://github.com/brian-olson/spotlight-monitor/blob/main/images/restart.png)
+# ![permissions](https://github.com/brian-olson/spotlight-monitor/blob/main/images/restart.png)
 
 In order to make this work with cron on OS X you will need to grant cron some permissions. I simply went through the "Security & Privacy" preferences and added cron to all categories Spotlight was enabled. Those were: 
 
