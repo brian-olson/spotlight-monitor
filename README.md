@@ -20,6 +20,8 @@ Then you'll want to add a command something like this:
 
 `*/10 * * * * /usr/local/bin/python3 ~/spotlight_mem.py`
 
+![crontab](https://github.com/brian-olson/spotlight-monitor/blob/main/images/crontab.png)
+
 Be sure to update the location to python as well as the script file. You can find you python installation with `which python`. This entry will run the script every 10 minutes (you may wish to change this). 
 
 NOTE: This is how I made it work. This might not be the most secure configuration (giving cron blanket privs). 
